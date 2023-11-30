@@ -7,7 +7,6 @@ import {Web3Component} from "./web3/web3.component";
 import {HomeComponent} from "./home/home.component";
 import {DigitalLabComponent} from "./digital-lab/digital-lab.component";
 import {AgenceComponent} from "./agence/agence.component";
-import {BlogComponent} from "./blog/blog.component";
 import {PortfolioComponent} from "./portfolio/portfolio.component";
 import {Home2Component} from "./home2/home2.component";
 import {AgenceAcquisitionComponent} from "./agence-acquisition/agence-acquisition.component";
@@ -22,7 +21,6 @@ const routes: Routes = [
   {path:'web3',component:Web3Component},
   {path:'digital',component:DigitalLabComponent},
   {path:'agence',component:AgenceComponent},
-  {path:'blog',component:BlogComponent},
   {path:'portfolio',component:PortfolioComponent},
   { path: 'home', component: Home2Component },
 
