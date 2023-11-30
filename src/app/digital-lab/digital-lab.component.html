@@ -1,5 +1,5 @@
 
-<div class="" style="background:#010163; overflow: hidden">
+<div class="" style="background:#005792; overflow: hidden">
 
   <div class="row">
 
@@ -12,16 +12,16 @@
       <h1 class="text-grand"><strong>Digital Lab</strong></h1>
       <h1 *ngIf="language == 'fr'" class="mt-3 sous-text" >Agence digitale</h1>
       <h1 *ngIf="language == 'en'" class="mt-3 sous-text" >Digital agency</h1>
-      <p *ngIf="language == 'fr'" class="mt-lg-5 mt-3 mb-5">Notre mission est de vous faire <span style="background-color: white; color: #1A71FD;font-weight: bold;">atteindre vos objectifs</span> de croissance en mettant à votre service toute notre expertise digitale : création de site web, mise en place de campagnes publicitaires digitales (Google Ads &amp; Social Ads), stratégie SEO, création de contenu et stratégie emailing CRM.
-        <br>Le but ultime, <span style="background-color: white; color: #417cea; font-weight: bold;">toucher vos cibles au bon moment avec le bon message</span> pour obtenir le plus de conversions au meilleur coût.</p>
-      <p *ngIf="language == 'en'" class="mt-lg-5 mt-3 mb-5">Our mission is to help you <span style="background-color: white; color: #1A71FD; font-weight: bold;"> achieve your growth objectives</span> by putting all our digital expertise at your service: website creation, implementation of digital advertising campaigns (Google Ads & Social Ads), SEO strategy, content creation and CRM emailing strategy.
-        <br>The ultimate goal, <span style="background-color: white; color: #417cea; font-weight: bold;">to reach your targets at the right time with the right message</span> to get the most conversions at the lowest cost.</p>
+      <p *ngIf="language == 'fr'" class="mt-lg-5 mt-3 mb-5">Notre mission est de vous faire <span style="background-color: #f70776; color: #ffffff;font-weight: bold;">atteindre vos objectifs</span> de croissance en mettant à votre service toute notre expertise digitale : création de site web, mise en place de campagnes publicitaires digitales (Google Ads &amp; Social Ads), stratégie SEO, création de contenu et stratégie emailing CRM.
+        <br>Le but ultime, <span style="background-color: white; color: #f70776; font-weight: bold;">toucher vos cibles au bon moment avec le bon message</span> pour obtenir le plus de conversions au meilleur coût.</p>
+      <p *ngIf="language == 'en'" class="mt-lg-5 mt-3 mb-5">Our mission is to help you <span style="background-color: #f70776; color: #ffffff; font-weight: bold;"> achieve your growth objectives</span> by putting all our digital expertise at your service: website creation, implementation of digital advertising campaigns (Google Ads & Social Ads), SEO strategy, content creation and CRM emailing strategy.
+        <br>The ultimate goal, <span style="background-color: #f70776; color: #ffffff; font-weight: bold;">to reach your targets at the right time with the right message</span> to get the most conversions at the lowest cost.</p>
         <div id="up-down">
           <a (click)="scrollToSection('DWeb')"><i style="cursor: pointer" class="fa-solid fa-chevron-down"></i></a>
         </div>
     </div>
   </div>
-    <section id="DWeb" style="background: #010163; color: white">
+    <section id="DWeb" style="background: #005792; color: white">
       <div class="row">
 
         <div class="col-lg-6">
@@ -54,8 +54,8 @@
         <div class="col-lg-6 p-4">
           <div class="d-flex justify-content-start  lien" style="margin-top: 70px">
 
-            <p *ngIf="language == 'fr'" ><mark style="background: #417cea"> Développement Web </mark></p>
-            <p *ngIf="language == 'en'" ><mark style="background: #417cea"> Web development </mark></p> 
+            <p *ngIf="language == 'fr'" ><mark style="background: #f70776"> Développement Web </mark></p>
+            <p *ngIf="language == 'en'" ><mark style="background: #f70776"> Web development </mark></p> 
             <a class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('Ads')"> Ads</a>
             <a class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('emailing')"> Emailing & CRM </a> 
             <a *ngIf="language == 'fr'" class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('prod')"> Production de contenus </a>
@@ -86,7 +86,7 @@
 
 
 
-    <section id="Ads" style="background: #010163; color: white">
+    <section id="Ads" style="background: #005792; color: white">
       <div class="row">
 
         <div class="col-lg-6">
@@ -121,7 +121,7 @@
 
             <a *ngIf="language == 'fr'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Développement Web </a>
             <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Web development </a> 
-            <p><mark style="background: #417cea">Ads</mark> </p>
+            <p><mark style="background: #f70776">Ads</mark> </p>
             <a class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('emailing')"> Emailing & CRM </a> 
             <a *ngIf="language == 'fr'" class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('prod')"> Production de contenus </a>
             <a *ngIf="language == 'en'" class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('prod')"> Content production </a>  
@@ -154,7 +154,7 @@
 
 
 
-    <section id="emailing" style="background: #010163; color: white">
+    <section id="emailing" style="background: #005792; color: white">
       <div class="row">
 
         <div class="col-lg-6">
@@ -190,7 +190,7 @@
             <a *ngIf="language == 'fr'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Développement Web </a>
             <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Web development </a> 
             <a class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('Ads')">Ads </a>
-            <p><mark style="background: #417cea">Emailing & CRM</mark>  </p> 
+            <p><mark style="background: #f70776">Emailing & CRM</mark>  </p> 
             <a *ngIf="language == 'fr'" class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('prod')"> Production de contenus </a>
             <a *ngIf="language == 'en'" class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('prod')"> Content production </a>  
             <a class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('seo')"> SEO </a> 
@@ -220,7 +220,7 @@
 
 
 
-    <section id="prod" style="background: #010163; color: white">
+    <section id="prod" style="background: #005792; color: white">
       <div class="row">
 
         <div class="col-lg-6">
@@ -257,8 +257,8 @@
             <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Web development </a> 
             <a class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('Ads')">Ads </a>
             <a class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('emailing')">Emailing & CRM  </a> 
-            <p *ngIf="language == 'fr'" ><mark style="background: #417cea">Production de contenus</mark>  </p>
-            <p *ngIf="language == 'en'" ><mark style="background: #417cea">Content production</mark>  </p>  
+            <p *ngIf="language == 'fr'" ><mark style="background: #f70776">Production de contenus</mark>  </p>
+            <p *ngIf="language == 'en'" ><mark style="background: #f70776">Content production</mark>  </p>  
             <a class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('seo')"> SEO </a> 
             <a class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('analytics')"> Analytics & Data </a>
           
@@ -285,7 +285,7 @@
 
 
 
-    <section id="seo" style="background: #010163; color: white">
+    <section id="seo" style="background: #005792; color: white">
       <div class="row">
 
         <div class="col-lg-6">
@@ -322,7 +322,7 @@
             <a class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('emailing')">Emailing & CRM  </a> 
             <a *ngIf="language == 'fr'" class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('prod')">Production de contenus  </a>
             <a *ngIf="language == 'en'" class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('prod')">Content production  </a>  
-            <p > <mark style="background: #417cea">SEO</mark> </p> 
+            <p > <mark style="background: #f70776">SEO</mark> </p> 
             <a class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('analytics')"> Analytics & Data </a>
           
           </div>
@@ -350,7 +350,7 @@
 
 
 
-    <section id="analytics" style="background: #010163; color: white">
+    <section id="analytics" style="background: #005792; color: white">
       <div class="row">
 
         <div class="col-lg-6">
@@ -390,7 +390,7 @@
             <a *ngIf="language == 'fr'" class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('prod')">Production de contenus  </a>
             <a *ngIf="language == 'en'" class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('prod')">Content production  </a>  
             <a class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('seo')"> SEO</a> 
-            <p><mark style="background: #417cea"> Analytics & Data </mark></p>
+            <p><mark style="background: #f70776"> Analytics & Data </mark></p>
           
           </div>
 
@@ -418,7 +418,7 @@
 
 
 
-    <section  class="" style="background: #010163; color: white">
+    <section  class="" style="background: #005792; color: white">
       <div class="image-container2">
 
         <img src="assets/images/Sticker-02.svg" class="sticker2" >

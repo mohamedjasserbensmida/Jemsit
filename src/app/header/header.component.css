@@ -9,7 +9,7 @@ color: #000;
 }
 .btn_modifier:hover{
 
-    background: #417cea;
+    background: #f70776;
     color: white;
 }
 li{
@@ -88,7 +88,7 @@ h4{
 }
 .item4:hover{
 
-  background: #6D16F7;
+  background: #1A71FD;
 }
 .item4:hover h4{
 
@@ -98,7 +98,7 @@ h4{
   transition: letter-spacing .8s;
 }
 .item4:hover .btn_modifierNav{
-color: #6D16F7;
+color: #1A71FD;
    background: white;
  }
 .navbar-nav > .nav-item dropdown {

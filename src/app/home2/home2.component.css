@@ -94,7 +94,7 @@ form{
 .btn_modifier{
   z-index: 9999999;
   font-family: pangram;
-  background: linear-gradient(to right, #010163 50%, #417cea 50%);
+  background: linear-gradient(to right, #005792 50%, #f70776 50%);
   background-size: 200% 100%;
   transition: background-position 0.3s;
 color: white;
@@ -112,7 +112,7 @@ border: 1px solid white;
 .btn_modifier2{
   z-index: 9999999;
   font-family: pangram;
-  background: linear-gradient(to right, #010163 50%, #417cea 50%);
+  background: linear-gradient(to right, #005792 50%, #f70776 50%);
   background-size: 200% 100%;
   transition: background-position 0.3s;
   color: white;
@@ -127,7 +127,7 @@ border: 1px solid white;
 .btn_modifier3{
   z-index: 9999999;
   font-family: pangram;
-  background: linear-gradient(to right, #010163 50%, #1A71FD 50%);
+  background: linear-gradient(to right, #005792 50%, #f70776 50%);
   background-size: 200% 100%;
   transition: background-position 0.3s;
   color: white;

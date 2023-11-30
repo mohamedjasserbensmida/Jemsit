@@ -32,7 +32,7 @@ a{
 .a-active{
 
   font-weight: bold !important;
-  background-color: #1A71FD !important;
+  background-color: #f70776 !important;
 
 }
 .titre{
@@ -44,7 +44,7 @@ a{
 
 .btn_modifier{
   font-family: pangram;
-  background: linear-gradient(to right, white 50%, #1A71FD 50%);
+  background: linear-gradient(to right, white 50%, #f70776 50%);
   background-size: 200% 100%;
   transition: background-position 0.3s;
   color:black;

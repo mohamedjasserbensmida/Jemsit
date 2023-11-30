@@ -15,7 +15,7 @@ p{
 }
 .btn_modifier{
   font-family: pangram;
-  background: linear-gradient(to right, white 50%, #417cea 50%);
+  background: linear-gradient(to right, #fafafa 50%, #f70776 50%);
   background-size: 200% 100%;
   transition: background-position 0.3s;
 
@@ -31,12 +31,10 @@ p{
 
 .btn_modifier2{
   font-family: pangram;
-  background: linear-gradient(to right, #010163 50%, #417cea 50%);
+  background: linear-gradient(to right, #f7f7f7 50%, #f70776 50%);
   background-size: 200% 100%;
   transition: background-position 0.3s;
-  border: 1px solid white;
-  color: white;
-
+ 
 
 }
 
