@@ -7,12 +7,12 @@
 }
 
 .body-agence{
-  background: #010163;
+  background: #005792;
 
 }
 
 .body-valeur{
-  background: #417cea;
+  background: #005792;
 
 }
 h1,h2,h3{
@@ -55,7 +55,7 @@ p{
 }
 .btn_modifier{
   font-family: pangram;
-  background: linear-gradient(to right, #010163 50%, #417cea 50%);
+  background: linear-gradient(to right, #005792 50%, #f70776 50%);
   background-size: 200% 100%;
   transition: background-position 0.3s;
   border: 1px solid white;
