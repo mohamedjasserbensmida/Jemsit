@@ -1,0 +1,807 @@
+
+<div style="background: #010163; color: white; overflow: hidden;">
+
+
+  <div class="video_cont">
+
+    <video  #video src="assets/images/Teaser-Manking-of.mp4" loop muted autoplay  (canplay)="video.play()" playsInline
+    (loadedmetadata)="video.muted = true"></video>
+    <img src="assets/images/vingtdeux-logo-blanc-big.svg" class="img-fluid centered-image">
+
+  </div>
+
+
+  <div class="container">
+
+
+    <div class="row mt-5">
+
+      <div class="col-lg-2">
+
+
+
+      </div>
+      <div *ngIf="language == 'fr'"  class="col-lg-8 text-center">
+        <h1 class="text-center Agence" >Agence de communication créative &amp; digitale à Clermont-Ferrand</h1>
+
+        <h2 class="text-special" ><span style="background: #417cea">Nous aidons les marques à créer du sens et de l’engagement grâce à la créativité et l’innovation </span></h2>
+        <p class="text-center AgenceP">Vous êtes unique, nous aussi.
+          Nous sommes Vingt Deux (agence 22), une équipe de 13 experts mettant leur vision au service du succès des marques nationales et régionales que nous aidons au quotidien. Stratégie de communication, création graphique, création de site internet, social média… Nous avons la capacité de vous accompagner sur vos projets avec un regard 360° et un goût certain pour les challenges !</p>
+
+        <a class="btn btn_modifier mt-5 "  (click)="scrollToSection('form')">Contactez-nous<i class="fa-solid fa-plus ms-4"></i></a>
+
+      </div>
+      <div *ngIf="language == 'en' "  class="col-lg-8 text-center">
+        <h1 class="text-center Agence" >Creative digital communications agency in Clermont-Ferrand</h1>
+
+        <h2 class="text-special" ><span style="background: #417cea">We help brands create meaning and engagement through creativity and innovation </span></h2>
+        <p class="text-center AgenceP">You're unique, so are we.
+          We are Vingt Deux (agency 22), a team of 13 experts who put their vision to work for the success of the national and regional brands we help on a daily basis. Communications strategy, graphic design, website creation, social media... We have the capacity to accompany you on your projects with a 360° view and a taste for challenges!</p>
+
+        <a class="btn btn_modifier mt-5 "  (click)="scrollToSection('form')">Contact us<i class="fa-solid fa-plus ms-4"></i></a>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="row image_animation0" style="margin-top: 150px">
+
+
+
+      <div class="col-lg-6 text-center">
+        <div class="row">
+
+          <div class="col-lg-3 col-3">
+
+          </div>
+          <div class="col-lg-6 col-6" style=" display: flex;flex-direction: column-reverse;">
+            <img src="assets/images/home_0%20(1).webp" width="95%"  id="image1_0" class="img-fluid">
+
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-6 col-6">
+            <img src="assets/images/home_0%20(2).webp" id="image2_0" width="95%" class="img-fluid">
+
+          </div>
+          <div class="col-lg-6 col-6">
+            <img src="assets/images/home_0%20(3).webp" id="image3_0"  width="95%" class="img-fluid">
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div *ngIf="language == 'fr'" class="col-lg-6" >
+        <h2 >
+          Conseil et stratégie de communication
+        </h2>
+        <p >La bonne promesse, le bon positionnement, le bon message. Chez Vingt Deux, nous créons des stratégies de marque solides pour une communication efficace et percutante. Nous aidons votre entreprise à se démarquer de la concurrence et atteindre ses objectifs.</p>
+        <div class="d-flex justify-content-start flex-wrap">
+          <a class="btn btn_modifier2 mt-3 "  style="   font-family: 'pangram'">Stratégie de marque <i class="fa-solid fa-plus ms-4"></i></a>
+          <a class="btn btn_modifier2 mt-3 ms-lg-4  ms-md-4 ms-0 "  style="   font-family: 'pangram'">Naming / Rebranding <i class="fa-solid fa-plus ms-4"></i></a>
+        </div>
+
+        <div class="d-flex justify-content-start flex-wrap ">
+          <a class="btn btn_modifier2 mt-3 "  style="   font-family: 'pangram'">Startégie de communication <i class="fa-solid fa-plus ms-4"></i></a>
+          <a class="btn btn_modifier2 mt-3 ms-lg-4  ms-md-4 ms-0 "  style="   font-family: 'pangram'">Communication corporate<i class="fa-solid fa-plus ms-4"></i></a>
+        </div>
+
+        <div class="d-flex justify-content-start flex-wrap ">
+          <a class="btn btn_modifier2 mt-3 "  style="   font-family: 'pangram'">Marque employeur<i class="fa-solid fa-plus ms-4"></i></a>
+        </div>
+
+      </div>
+
+      <div *ngIf="language == 'en'" class="col-lg-6">
+        <h2 >
+          Consulting and communications strategy
+        </h2>
+        <p >The right promise, the right positioning, the right message. At Vingt Deux, we create solid brand strategies for effective, impactful communication. We help your company stand out from the competition and achieve its goals.</p>
+        <div class="d-flex justify-content-start flex-wrap">
+          <a class="btn btn_modifier2 mt-3 "  style="   font-family: 'pangram'">Brand strategy <i class="fa-solid fa-plus ms-4"></i></a>
+          <a class="btn btn_modifier2 mt-3 ms-lg-4  ms-md-4 ms-0 "  style="   font-family: 'pangram'">Naming / Rebranding <i class="fa-solid fa-plus ms-4"></i></a>
+        </div>
+
+        <div class="d-flex justify-content-start flex-wrap ">
+          <a class="btn btn_modifier2 mt-3 "  style="   font-family: 'pangram'">Communication strategy <i class="fa-solid fa-plus ms-4"></i></a>
+          <a class="btn btn_modifier2 mt-3 ms-lg-4  ms-md-4 ms-0 "  style="   font-family: 'pangram'">Corporate communication<i class="fa-solid fa-plus ms-4"></i></a>
+        </div>
+
+        <div class="d-flex justify-content-start flex-wrap ">
+          <a class="btn btn_modifier2 mt-3 "  style="   font-family: 'pangram'">Employer branding<i class="fa-solid fa-plus ms-4"></i></a>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="row image_animation1" style="margin-top: 150px">
+
+
+            <div *ngIf="language == 'fr'" class="col-lg-6">
+              <h2 >
+                Studio créatif<br>&amp; graphisme
+              </h2>
+              <p >Notre mission ? Vous rendre inoubliable. Notre studio créatif imagine les meilleurs concepts créatifs pour vous rendre unique et remarquable. Nous travaillons sur l'identité visuelle, la direction artistique, la photo, la vidéo et le storytelling de nos concepts afin qu'ils communiquent efficacement votre ADN, votre vision et votre ambition. Nous pensons chaque détail afin de produire les meilleurs assets visuels pour votre marque.</p>
+              <div class="d-flex justify-content-start flex-wrap">
+                <a class="btn btn_modifier mt-3 "  style="   font-family: 'pangram'">Direction artistique <i class="fa-solid fa-plus ms-4"></i></a>
+                <a class="btn btn_modifier mt-3 ms-lg-4  ms-md-4 ms-0"  style="   font-family: 'pangram'">Logo / Charte graphique <i class="fa-solid fa-plus ms-4"></i></a>
+              </div>
+
+              <div class="d-flex justify-content-start flex-wrap ">
+                <a class="btn btn_modifier mt-3 "  style="   font-family: 'pangram'">Design graphique <i class="fa-solid fa-plus ms-4"></i></a>
+                <a class="btn btn_modifier mt-3 ms-lg-4  ms-md-4 ms-0"  style="   font-family: 'pangram'">Photo et vidéo<i class="fa-solid fa-plus ms-4"></i></a>
+              </div>
+
+              <div class="d-flex justify-content-start flex-wrap ">
+                <a class="btn btn_modifier mt-3  "  style="   font-family: 'pangram'">Interface UX/UI<i class="fa-solid fa-plus ms-4"></i></a>
+              </div>
+
+            </div>
+
+            <div *ngIf="language == 'en'" class="col-lg-6">
+              <h2 >
+                Creative studio<br>&amp; graphic design
+              </h2>
+              <p >Our mission? To make you unforgettable. Our creative studio imagines the best creative concepts to make you unique and remarkable. We work on the visual identity, art direction, photography, video and storytelling of our concepts so that they effectively communicate your DNA, vision and ambition. We think through every detail to produce the best visual assets for your brand.</p>              <div class="d-flex justify-content-start flex-wrap">
+                <a class="btn btn_modifier mt-3 "  style="   font-family: 'pangram'">Art Direction <i class="fa-solid fa-plus ms-4"></i></a>
+                <a class="btn btn_modifier mt-3 ms-lg-4  ms-md-4 ms-0"  style="   font-family: 'pangram'">Logo / Graphic charter <i class="fa-solid fa-plus ms-4"></i></a>
+              </div>
+
+              <div class="d-flex justify-content-start flex-wrap ">
+                <a class="btn btn_modifier mt-3 "  style="   font-family: 'pangram'">Graphic design <i class="fa-solid fa-plus ms-4"></i></a>
+                <a class="btn btn_modifier mt-3 ms-lg-4  ms-md-4 ms-0"  style="   font-family: 'pangram'">Photo and video<i class="fa-solid fa-plus ms-4"></i></a>
+              </div>
+
+              <div class="d-flex justify-content-start flex-wrap ">
+                <a class="btn btn_modifier mt-3  "  style="   font-family: 'pangram'">UX/UI interface<i class="fa-solid fa-plus ms-4"></i></a>
+              </div>
+
+            </div>
+            <div class="col-lg-6 text-center">
+              <div class="row">
+
+                <div class="col-lg-6 col-6" style="display: flex;
+    flex-direction: column-reverse;
+    align-content: flex-start;
+    align-items: flex-end;">
+                  <img src="assets/images/home%20(2).webp" id="image1" width="95%"  class="img-fluid ">
+
+                </div>
+                <div class="col-lg-6 col-6" style=" display: flex;flex-direction: column-reverse;">
+                  <img src="assets/images/home%20(1).svg" width="95%"  id="image2" class="img-fluid">
+
+                </div>
+              </div>
+              <div class="row">
+
+                <div class="col-lg-6 col-6" style="display: flex;
+    flex-direction: column-reverse;
+    align-content: flex-start;
+    align-items: flex-end;">
+                  <img src="assets/images/home%20(3).webp" id="image3" width="95%" class="img-fluid">
+
+                </div>
+                <div class="col-lg-6 col-6" style=" display: flex;flex-direction: column-reverse;">
+                  <img src="assets/images/home%20(1).webp" id="image4"  width="95%" class="img-fluid">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+          <div class="row image_animation2" style="margin-top: 150px">
+
+
+
+            <div class="col-lg-6 text-center image_animation22">
+              <div class="image-wrapper">
+                <img src="assets/images/home2%20(1).webp" id="image1_1" width="95%"  class="img-fluid">
+
+
+                <img src="assets/images/home2%20(2).webp" width="95%"  id="image2_2" class="img-fluid">
+
+
+
+
+
+                <img src="assets/images/home2%20(3).webp" id="image3_3" width="95%" class="img-fluid">
+
+
+
+                <img src="assets/images/home2%20(4).webp" id="image4_4"  width="95%" class="img-fluid">
+              </div>
+            </div>
+
+
+
+
+
+
+
+            <div *ngIf="language == 'fr'" class="col-lg-6">
+              <h2 >
+                Web &amp; <br>
+                marketing digital
+              </h2>
+              <p >Experts en marketing digital et en création de site internet, nous élaborons des sites internet et des stratégies digitales pour renforcer votre marque et stimuler les conversions. Nous travaillons également votre stratégie de référencement naturel et de référencement payant afin de donner toute la visibilité possible à votre entreprise.</p>
+              <div class="d-flex justify-content-start flex-wrap">
+                <a class="btn btn_modifier3 mt-3 "  style="   font-family: 'pangram'">Sites web et e-commerce<i class="fa-solid fa-plus ms-4"></i></a>
+                <a class="btn btn_modifier3 mt-3 ms-lg-4  ms-md-4 ms-0 "  style="   font-family: 'pangram'">Publicités Google & Social Ads <i class="fa-solid fa-plus ms-4"></i></a>
+              </div>
+
+              <div class="d-flex justify-content-start flex-wrap">
+                <a class="btn btn_modifier3 mt-3 "  style="   font-family: 'pangram'">Growth marketing <i class="fa-solid fa-plus ms-4"></i></a>
+                <a class="btn btn_modifier3 mt-3 ms-lg-4  ms-md-4 ms-0 "  style="   font-family: 'pangram'">Référencement naturel / SEO<i class="fa-solid fa-plus ms-4"></i></a>
+              </div>
+
+              <div class="d-flex justify-content-start flex-wrap">
+                <a class="btn btn_modifier3 mt-3 "  style="   font-family: 'pangram'">Réseaux sociaux<i class="fa-solid fa-plus ms-4"></i></a>
+              </div>
+
+            </div>
+            <div *ngIf="language == 'en'" class="col-lg-6">
+              <h2 >
+                Web &amp; <br>
+                digital marketing
+              </h2>
+              <p >Experts in digital marketing and website creation, we develop websites and digital strategies to strengthen your brand and boost conversions. We also work on your search engine optimization (SEO) and paid search strategies to give your company maximum visibility.</p>              <div class="d-flex justify-content-start flex-wrap">
+                <a class="btn btn_modifier3 mt-3 "  style="   font-family: 'pangram'">Websites and e-commerce<i class="fa-solid fa-plus ms-4"></i></a>
+                <a class="btn btn_modifier3 mt-3 ms-lg-4  ms-md-4 ms-0 "  style="   font-family: 'pangram'">Google Ads & Social Ads <i class="fa-solid fa-plus ms-4"></i></a>
+              </div>
+
+              <div class="d-flex justify-content-start flex-wrap">
+                <a class="btn btn_modifier3 mt-3 "  style="   font-family: 'pangram'">Growth marketing <i class="fa-solid fa-plus ms-4"></i></a>
+                <a class="btn btn_modifier3 mt-3 ms-lg-4  ms-md-4 ms-0 "  style="   font-family: 'pangram'">Search Engine Optimization (SEO)<i class="fa-solid fa-plus ms-4"></i></a>
+              </div>
+
+              <div class="d-flex justify-content-start flex-wrap">
+                <a class="btn btn_modifier3 mt-3 "  style="   font-family: 'pangram'">Social networking<i class="fa-solid fa-plus ms-4"></i></a>
+              </div>
+
+            </div>
+
+          </div>
+  </div>
+
+
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin-top: 150px">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-flex">
+          <img src="assets/images/home%20(1).webp" class="d-block w-50" alt="Image 1">
+          <img src="assets/images/Développement-Web-MFF.png" class="d-block w-50" alt="Image 2">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex">
+          <img src="assets/images/Développement-Web-MFF.png" class="d-block w-50" alt="Image 2">
+          <img src="assets/images/noreva-DA-pic.jpeg" class="d-block w-50" alt="Image 3">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex">
+          <img src="assets/images/noreva-DA-pic.jpeg" class="d-block w-50" alt="Image 3">
+          <img src="assets/images/Turing-Home.jpeg" class="d-block w-50" alt="Image 4">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex">
+          <img src="assets/images/Turing-Home.jpeg" class="d-block w-50" alt="Image 4">
+          <img src="assets/images/home%20(1).webp" class="d-block w-50" alt="Image 1">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+    <div class="row mt-5 ">
+
+<div class="col-lg-3 col-md-3"></div>
+      <div *ngIf="language == 'fr'" class="col-lg-6">
+      <h2  class="text-center">Vous avez la réf ?</h2>
+
+<p class="text-center">Nous avons eu le plaisir de travailler ensemble.</p>
+      </div>
+
+      <div *ngIf="language == 'en'" class="col-lg-6">
+        <h2  class="text-center">Do you have the ref?</h2>
+  
+  <p class="text-center">We had the pleasure of working together.</p>
+        </div>
+      <div class="col-lg-3 text-end">
+
+        <img src="assets/images/heart-shape.svg" class="img-fluid heart">
+      </div>
+
+    </div>
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-2 offset-lg-1 col-md-4 col-4">
+        <img src="assets/images/logo_1%20(2).svg" class="img-fluid">
+      </div>
+      <div class="col-lg-2 col-md-4 col-4">
+        <img src="assets/images/logo_1%20(1).svg" class="img-fluid">
+      </div>
+      <div class="col-lg-2 col-md-4 col-4">
+        <img src="assets/images/logo_1%20(4).svg" class="img-fluid">
+      </div>
+      <div class="col-lg-2 col-md-4 col-4">
+        <img src="assets/images/logo_1%20(3).svg" class="img-fluid">
+      </div>
+      <div class="col-lg-2 col-md-4 col-4">
+        <img src="assets/images/logo_1%20(5).svg" class="img-fluid">
+      </div>
+
+      <div class="col-lg-2 offset-lg-1 col-md-4 col-4">
+        <img src="assets/images/logo_1%20(1).svg" class="img-fluid">
+      </div>
+      <div class="col-lg-2 col-md-4 col-4">
+        <img src="assets/images/logo_1%20(2).svg" class="img-fluid">
+      </div>
+      <div class="col-lg-2 col-md-4 col-4">
+        <img src="assets/images/logo_1%20(3).svg" class="img-fluid">
+      </div>
+      <div class="col-lg-2 col-md-4 col-4">
+        <img src="assets/images/logo_1%20(4).svg" class="img-fluid">
+      </div>
+      <div class="col-lg-2 col-md-4 col-4">
+        <img src="assets/images/logo_1%20(5).svg" class="img-fluid">
+      </div>
+
+      <div class="col-lg-2 offset-lg-1 col-md-4 col-4">
+        <img src="assets/images/logo_1%20(1).svg" class="img-fluid">
+      </div>
+      <div class="col-lg-2 col-md-4 col-4">
+        <img src="assets/images/logo_1%20(2).svg" class="img-fluid">
+      </div>
+      <div class="col-lg-2 col-md-4 col-4">
+        <img src="assets/images/logo_1%20(3).svg" class="img-fluid">
+      </div>
+      <div class="col-lg-2 col-md-4 col-4">
+        <img src="assets/images/logo_1%20(4).svg" class="img-fluid">
+      </div>
+      <div class="col-lg-2 col-md-4 col-4">
+        <img src="assets/images/logo_1%20(5).svg" class="img-fluid">
+      </div>
+    </div>
+
+
+    <div class="row text-center">
+<div class="col-lg-3 col-md-3 col-3"></div>
+      <div *ngIf="language == 'fr'" class="col-lg-6 col-md-6 col-6">
+      <p class="mt-4">Et vous ?</p>
+      <a class="btn btn_modifier mt-3 "  (click)="scrollToSection('form')">Nous contacter<i class="fa-solid fa-plus ms-4"></i></a>
+      </div>
+      <div *ngIf="language == 'en'" class="col-lg-6 col-md-6 col-6">
+        <p class="mt-4">What about you?</p>
+        <a class="btn btn_modifier mt-3 "  (click)="scrollToSection('form')">Contact us<i class="fa-solid fa-plus ms-4"></i></a>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="row mt-5">
+
+
+  <div class="col-lg-6 col-md-6">
+
+    <img src="assets/images/vingtdeux-agence-creative.jpeg.webp" class="img-fluid flip">
+
+  </div>
+  <div class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
+<div class="p-4">
+    <h2 class=""><b>Vingt Deux</b></h2>
+    <div *ngIf="language == 'fr'">
+      <h3 >Agence créative à Clermont-Ferrand.</h3>
+      <p class="">Vingt Deux (agence 22) est une société de communication basée à Clermont-Ferrand. Nous travaillons également hors de la région Auvergne-Rhônes-Alpes avec des marques nationales comme internationales.</p>
+      <p class="">Notre cabinet de communication imagine vos projets <span style="background: #417cea">dans leur globalité </span> et comme pour nous le conseil nourrit la création nous n’envisageons pas un projet sans le petit conseil en plus, rien que pour vous. </p>
+      <p class="">Vous cherchez un partenaire sur Clermont-Fd, le Puy-de-Dôme ou en France ?<br> Notre équipe aime les challenges ! <span style="background: #417cea">Relevons-les ensemble.</span></p>
+    </div>
+    <div *ngIf="language == 'en'">
+      <h3 >Creative agency in Clermont-Ferrand.</h3>
+      <p class="">Vingt Deux (agence 22) is a communications company based in Clermont-Ferrand. We also work outside the Auvergne-Rhônes-Alpes region with both national and international brands.</p>      <p class="">Notre cabinet de communication imagine vos projets <span style="background: #417cea">dans leur globalité </span> et comme pour nous le conseil nourrit la création nous n’envisageons pas un projet sans le petit conseil en plus, rien que pour vous. </p>
+      <p class="">Vous cherchez un partenaire sur Clermont-Fd, le Puy-de-Dôme ou en France ?<br> Notre équipe aime les challenges ! <span style="background: #417cea">Relevons-les ensemble.</span></p>    </div>
+   
+</div>
+  </div>
+
+</div>
+
+
+
+
+  <div class="container">
+
+    <div *ngIf="language == 'fr'" class="row mt-5">
+
+
+      <h2 class="fw-light">Travailler avec<br>
+        <b class="fw-bold">Vingt Deux </b></h2>
+    </div>
+    <div *ngIf="language == 'en'" class="row mt-5">
+
+
+      <h2 class="fw-light">Working with<br>
+        <b class="fw-bold">Vingt Deux </b></h2>
+    </div>
+
+    <div *ngIf="language == 'fr'" class="row mt-4">
+
+<div class="col-lg-3 col-md-6 col-6">
+  <div class="rotate">
+  <img src="assets/images/ONE.svg" class="img-fluid rotate_">
+  </div>
+  <h3>Créativité</h3>
+  <p>Nous pensons hors de sentiers battus pour vous proposer des solutions de communication et des activations originales, innovantes et stimulantes pour vos projets.</p>
+
+</div>
+
+      <div class="col-lg-3 col-md-6 col-6">
+        <div class="rotate">
+          <img src="assets/images/TWO.svg" class="img-fluid rotate_">
+        </div>
+        <h3>Confiance</h3>
+        <p>Notre conception de la relation entre clients et partenaires se base sur des échanges francs et bienveillants afin de challenger toutes les idées nécessaires au succès de vos projets.</p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-6">
+        <div class="rotate">
+          <img src="assets/images/THREE.svg" class="img-fluid rotate_">
+        </div>
+
+        <h3>Agilité</h3>
+        <p>Nous savons travailler efficacement dans des environnements changeants et nous pouvons résoudre rapidement vos problématiques de communication et vous aidons à trouver des solutions créatives aux défis que vous rencontrez.</p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-6">
+        <div class="rotate">
+          <img src="assets/images/FOUR.svg" class="img-fluid rotate_">
+        </div>
+
+        <h3>Implication</h3>
+        <p>Votre projet est notre projet. Disponible et à l’écoute, nous vous accompagnons lors de chaque étape de votre projet. Que ce soit lors de la prise de brief ou après la livraison, nous sommes présents pour répondre à vos interrogations et suggestions.</p>
+      </div>
+  </div>
+  <div *ngIf="language == 'en'" class="row mt-4">
+
+    <div class="col-lg-3 col-md-6 col-6">
+      <div class="rotate">
+      <img src="assets/images/ONE.svg" class="img-fluid rotate_">
+      </div>
+      <h3>Creativity</h3>      
+      <p>We think outside the box to provide you with original, innovative and stimulating communication solutions and activations for your projects.</p>    
+    </div>
+    
+          <div class="col-lg-3 col-md-6 col-6">
+            <div class="rotate">
+              <img src="assets/images/TWO.svg" class="img-fluid rotate_">
+            </div>
+            <h3>Confidence</h3>            
+            <p>Our conception of the relationship between customers and partners is based on frank and benevolent exchanges in order to challenge all the ideas necessary for the success of your projects.</p>          </div>
+    
+          <div class="col-lg-3 col-md-6 col-6">
+            <div class="rotate">
+              <img src="assets/images/THREE.svg" class="img-fluid rotate_">
+            </div>
+    
+            <h3>Agility</h3>
+            <p>We know how to work effectively in changing environments and can quickly solve your communication problems and help you find creative solutions to the challenges you face.</p>          </div>
+    
+          <div class="col-lg-3 col-md-6 col-6">
+            <div class="rotate">
+              <img src="assets/images/FOUR.svg" class="img-fluid rotate_">
+            </div>
+    
+            <h3>Implication</h3>            
+            <p>Your project is our project. Available and ready to listen, we're with you every step of the way. From briefing to post-delivery, we're here to answer your questions and suggestions.</p>          </div>
+      </div>
+
+
+
+
+
+
+</div>
+
+
+
+  <div class="row mt-5">
+
+
+    <div class="col-lg-3 col-md-3 col-2">
+
+      <img src="../../assets/images/idea-shape.svg" class="img-fluid">
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-8">
+
+
+    <h2 *ngIf="language == 'fr'" class="fw-light text-center">Vous avez un projet ?<br>Et si nous lui <b class="fw-bold">donnions vie ensemble ?</b></h2>
+    <h2 *ngIf="language == 'en'" class="fw-light text-center">Do you have a project in mind?<br>What if we <b class="fw-bold">lived it together?</b></h2>
+    </div>
+  </div>
+
+
+  <div class="container">
+
+
+    <div class="row">
+
+
+
+      <div class="col-lg-3">
+
+
+
+      </div>
+
+      <div *ngIf="language == 'fr'" class="col-lg-6 text-center">
+        <p class="text-center">
+          <span style="background: #417cea">Vous êtes unique, ne l’oubliez pas !</span>
+          À l’agence Vingt Deux (ou agence 22 pour certains) , nous sommes fiers d’accompagner les marques engagées et fédératrices dans leur stratégie de communication. Nous les aidons à délivrer le meilleur message avec le meilleur visuel et le meilleur canal de communication afin de révéler leur potentiel et d’optimiser leur stratégie d’acquisition digitale ou physique.
+        </p>
+        <p class="">
+          Buvons un café ensemble et parlons-en.
+
+        Les bureaux de notre agence marketing se situent à Turing 22 à Clermont-Ferrand.
+        </p>
+
+      </div>
+      <div *ngIf="language == 'en'" class="col-lg-6 text-center">
+        <p class="text-center">
+          <span style="background: #417cea">Don't forget that you're unique!</span>
+          At Agence Vingt Deux (or Agence 22 for some), we're proud to support committed, unifying brands in their communications strategy. We help them deliver the best message with the best visual and the best communication channel to reveal their potential and optimize their digital or physical acquisition strategy.        </p>
+          <p class="">
+            Let's have a coffee together and talk about it.
+  
+          Our marketing agency offices are located at Turing 22 in Clermont-Ferrand.
+          </p>
+
+      </div>
+
+
+    </div>
+
+    <div class="row">
+
+
+
+      <div class="col-lg-2">
+
+
+
+      </div>
+
+      <div *ngIf="language == 'fr'" class="col-lg-8 text-center">
+
+        <h3 class="fw-bold">Votre Agence de Communication à Clermont-Ferrand.</h3>
+        <a class="btn btn_modifier mt-3 "  (click)="scrollToSection('form')">Nous contactez<i class="fa-solid fa-plus ms-4"></i></a>
+
+      </div>
+
+      <div *ngIf="language == 'en'" class="col-lg-8 text-center">
+
+        <h3 class="fw-bold">Your communications agency in Clermont-Ferrand.</h3>
+        <a class="btn btn_modifier mt-3 "  (click)="scrollToSection('form')">Contact us<i class="fa-solid fa-plus ms-4"></i></a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <section  class="mt-5" style="background: #010163; color: white">
+    <div class="image-container2">
+
+      <img src="assets/images/Sticker-02.svg" class="sticker2" >
+    </div>
+    <div class="container">
+      <div class="image-container">
+
+        <img src="assets/images/Team-Vingt-Deux-2022.png" class="img-fluid" style="border-radius: 15px">
+        <img src="assets/images/Sticker-01.svg" class="sticker" >
+      </div>
+
+
+
+      <div *ngIf="language == 'fr'" class="row mt-5">
+        <div class="col-lg-6 p-3 order-lg-1 order-1">
+          <h3 class="mt-5">CONTACTEZ-NOUS
+            <br><br>
+            <b>Besoin d'un <br> accompagnement ?</b></h3>
+          <hr>
+          <p class="mt-5">Échangeons sur votre projet et créons votre accompagnement sur mesure.
+            <br><br><br>
+            04 44 05 00 22
+            <br><br><br>
+            hello@vingtdeux.fr
+
+
+          </p>
+
+          <h3><b>5/5</b> <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i></h3>
+          <p>Avis Google</p>
+
+        </div>
+        <div class="col-lg-6 bg-white order-lg-2 order-2 mb-5 " style="border-radius: 15px">
+          <div class="text-dark p-3">
+            <h1> Nous Contacter</h1>
+            <p>Les champs marqués d’un * sont obligatoires   </p>
+            <form id="form">
+              <div class="form-group">
+                <label for="prenom">Prénom *</label>
+                <input type="text" class="form-control" id="prenom" required>
+              </div>
+              <div class="form-group">
+                <label for="nom">Nom *</label>
+                <input type="text" class="form-control" id="nom" required>
+              </div>
+              <div class="form-group">
+                <label for="entreprise">Entreprise *</label>
+                <input type="text" class="form-control" id="entreprise" required>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="form-group">
+                <label for="telephone">Téléphone *</label>
+                <input type="tel" class="form-control" id="telephone" required>
+              </div>
+              <div class="form-group">
+                <label for="besoin">Quel est votre besoin ? *</label>
+                <textarea class="form-control" id="besoin" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark mt-4 mb-4">Envoyer</button>
+            </form>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+
+      <div *ngIf="language == 'en'" class="row mt-5">
+        <div class="col-lg-6 p-3 order-lg-1 order-1">
+          <h3 class="mt-5">CONTACT US
+            <br><br>
+            <b>Do you need <br> support?</b></h3>
+          <hr>
+          <p class="mt-5">Let's discuss your project and create a tailor-made package.
+            <br><br><br>
+            04 44 05 00 22
+            <br><br><br>
+            hello@vingtdeux.fr
+
+
+          </p>
+
+          <h3><b>5/5</b> <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i></h3>
+          <p>Google reviews</p>
+
+        </div>
+        <div class="col-lg-6 bg-white order-lg-2 order-2 mb-5 " style="border-radius: 15px">
+          <div class="text-dark p-3">
+            <h1> Contact us</h1>
+            <p>Fields marked with * are mandatory   </p>
+            <form id="form">
+              <div class="form-group">
+                <label for="prenom">First name *</label>
+                <input type="text" class="form-control" id="prenom" required>
+              </div>
+              <div class="form-group">
+                <label for="nom">Name *</label>
+                <input type="text" class="form-control" id="nom" required>
+              </div>
+              <div class="form-group">
+                <label for="entreprise">Company *</label>
+                <input type="text" class="form-control" id="entreprise" required>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="form-group">
+                <label for="telephone">Phone *</label>
+                <input type="tel" class="form-control" id="telephone" required>
+              </div>
+              <div class="form-group">
+                <label for="besoin">What do you need? *</label>
+                <textarea class="form-control" id="besoin" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark mt-4 mb-4">Send</button>
+            </form>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+  </section>
+
+
+</div>
+
+
+
+

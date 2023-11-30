@@ -1,0 +1,129 @@
+@media (max-width: 991.98px) {
+  .justify-content-evenly {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .justify-content-evenly > a {
+    width: calc(33.33% - 2em); /* 3 columns on medium screens */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .justify-content-evenly > a {
+    width: calc(50% - 2em); /* 2 columns on extra small and small screens */
+  }
+}
+
+p{
+  font-family: Pangram;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-family: Pangram;
+  cursor: pointer;
+  padding: 5px 15px!important;
+  padding-top: 5px !important;
+  padding-right: 15px !important;
+  padding-bottom: 5px !important;
+  padding-left: 15px !important;
+}
+
+.a-active{
+
+  font-weight: bold !important;
+  background-color: #1A71FD !important;
+
+}
+.titre{
+
+  font-family: naoko,Sans-serif;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.btn_modifier{
+  font-family: pangram;
+  background: linear-gradient(to right, white 50%, #1A71FD 50%);
+  background-size: 200% 100%;
+  transition: background-position 0.3s;
+  color:black;
+
+
+}
+
+.btn_modifier:hover{
+color: white;
+  background-position: -100% 0;
+
+
+}
+
+.fadeInOut {
+  transition: opacity 300ms;
+}
+
+.fadeInOut.visible {
+  opacity: 1;
+}
+
+.fadeInOut.hidden {
+  opacity: 0;
+}
+
+
+
+.image-container {
+  position: relative;
+}
+
+.sticker {
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: stickerAnimation 5s infinite linear;
+}
+
+@keyframes stickerAnimation {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(-5px, 5px); }
+  100% { transform: translate(0, 0); }
+}
+
+.image-container2 {
+  position: relative;
+}
+
+.sticker2 {
+  width: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: stickerAnimation 5s infinite linear;
+  z-index: 15;
+}
+
+
+@media (max-width: 767.98px) {
+
+
+  .sticker2 {
+    width: 100px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    animation: stickerAnimation 5s infinite linear;
+    z-index: 15;
+  }
+  .sticker {
+    width: 100px;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    animation: stickerAnimation 5s infinite linear;
+  }
+}
+h3{
+  font-family: naoko;
+}

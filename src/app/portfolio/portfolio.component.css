@@ -1,0 +1,109 @@
+p{
+  font-family: Pangram;
+}
+
+h1,h3{
+  font-family: naoko;
+}
+
+@media (max-width: 991.98px) {
+  .justify-content-evenly {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .justify-content-evenly > a {
+    width: calc(33.33% - 2em);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .justify-content-evenly > a {
+    width: calc(50% - 2em);
+  }
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-family: Pangram;
+  cursor: pointer;
+  padding: 5px 15px!important;
+  padding-top: 5px !important;
+  padding-right: 15px !important;
+  padding-bottom: 5px !important;
+  padding-left: 15px !important;
+}
+
+.a-active{
+
+  font-weight: bold !important;
+  background-color: #F24663 !important;
+
+}
+.titre{
+
+  font-family: naoko,Sans-serif;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+
+
+
+.image-container {
+  position: relative;
+}
+
+.sticker {
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: stickerAnimation 5s infinite linear;
+}
+
+@keyframes stickerAnimation {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(-5px, 5px); }
+  100% { transform: translate(0, 0); }
+}
+
+.image-container2 {
+  position: relative;
+}
+
+.sticker2 {
+  width: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: stickerAnimation 5s infinite linear;
+  z-index: 15;
+}
+
+
+@media (max-width: 767.98px) {
+
+
+  .sticker2 {
+    width: 100px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    animation: stickerAnimation 5s infinite linear;
+    z-index: 15;
+  }
+  .sticker {
+    width: 100px;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    animation: stickerAnimation 5s infinite linear;
+  }
+
+  p{
+
+    font-size: 12px;
+  }
+}
+

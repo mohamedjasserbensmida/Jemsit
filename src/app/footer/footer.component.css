@@ -1,0 +1,14 @@
+p{
+  font-family: pangram;
+}
+a{
+
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+
+  color: #417cea;
+}

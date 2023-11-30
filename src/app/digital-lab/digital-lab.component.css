@@ -1,0 +1,163 @@
+
+h1,h3{
+
+  font-family: naoko;
+}
+
+.text-grand{
+  margin-top:100px;font-size: 50px
+}
+.sous-text{
+ font-size: 30px
+}
+p{
+  font-family: pangram;
+  font-size: 18px;
+}
+.btn_modifier{
+  font-family: pangram;
+  background: linear-gradient(to right, white 50%, #1A71FD 50%);
+  background-size: 200% 100%;
+  transition: background-position 0.3s;
+
+
+}
+
+.btn_modifier:hover{
+
+  background-position: -100% 0;
+
+
+}
+
+.btn_modifier2{
+  font-family: pangram;
+  background: linear-gradient(to right, #000022 50%, #1A71FD 50%);
+  background-size: 200% 100%;
+  transition: background-position 0.3s;
+  border: 1px solid white;
+  color: white;
+
+
+}
+
+.btn_modifier2:hover{
+  border: hidden;
+  background-position: -100% 0;
+
+
+}
+.lien {
+  font-size: 14px;
+}
+
+.lien a {
+  cursor: pointer;
+  color :#f7f4f64d;
+
+}
+mark{
+  color: white;
+  font-weight: bold;
+}
+
+.lien a:hover{
+
+  color: white;
+
+}
+
+
+.image-container {
+  position: relative;
+}
+
+.sticker {
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: stickerAnimation 5s infinite linear;
+}
+
+@keyframes stickerAnimation {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(-5px, 5px); }
+  100% { transform: translate(0, 0); }
+}
+
+.image-container2 {
+  position: relative;
+}
+
+.sticker2 {
+  width: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: stickerAnimation 5s infinite linear;
+  z-index: 15;
+}
+
+i{
+  animation: stickerAnimation 5s infinite linear;
+
+
+}
+
+@media (max-width: 767.98px) {
+
+  .sticker2 {
+    width: 100px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    animation: stickerAnimation 5s infinite linear;
+    z-index: 15;
+  }
+  .sticker {
+    width: 100px;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    animation: stickerAnimation 5s infinite linear;
+  }
+
+  p{
+
+    font-size: 12px;
+  }
+  .text-grand{
+    font-size: 8vw;
+    margin-top: 190px;
+  }
+  .sous-text{
+    font-size: 18px;
+  }
+
+  #up-down{
+    margin-top: 160px;
+  }
+  .hide-mobile{
+    display: none;
+  }
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Hide the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Hide the scrollbar track in Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Hide the scrollbar thumb in Firefox */
+html::-moz-scrollbar-thumb {
+  background-color: transparent;
+}

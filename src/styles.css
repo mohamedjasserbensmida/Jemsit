@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: naoko;
+  font-style: normal;
+  font-weight: 700;
+  font-display: auto;
+  src: url(./assets/font/naoko-04-medium-webfont-copie.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: naoko;
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url(./assets/font/naoko-01-light-webfont.woff2) format('woff2')
+}
+
+@font-face {
+  font-family: pangram;
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url(./assets/font/Pangram-Regular.otf);
+}
+
+@font-face {
+  font-family: pangram;
+  font-style: normal;
+  font-weight: 700;
+  font-display: auto;
+  src: url(./assets/font/Pangram-Bold.otf);
+}
+body{
+
+    background-color: #000000;
+}
