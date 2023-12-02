@@ -11,10 +11,20 @@
     <div class="col-lg-6 col-md-8 col-10 text-center mt-5 mb-5 text-white">
       <h1 class="text-grand"><strong>Our Services</strong></h1>
       <h1 *ngIf="language == 'fr'" class="mt-3 sous-text" >Nos Services</h1>
-      <p *ngIf="language == 'fr'" class="mt-lg-5 mt-3 mb-5">Notre mission est de vous faire <span style="background-color: #f70776; color: #ffffff;font-weight: bold;">atteindre vos objectifs</span> de croissance en mettant à votre service toute notre expertise digitale : création de site web, mise en place de campagnes publicitaires digitales (Google Ads &amp; Social Ads), stratégie SEO, création de contenu et stratégie emailing CRM.
-        <br>Le but ultime, <span style="background-color: white; color: #f70776; font-weight: bold;">toucher vos cibles au bon moment avec le bon message</span> pour obtenir le plus de conversions au meilleur coût.</p>
-      <p *ngIf="language == 'en'" class="mt-lg-5 mt-3 mb-5">Our mission is to help you <span style="background-color: #f70776; color: #ffffff; font-weight: bold;"> achieve your growth objectives</span> by putting all our digital expertise at your service: website creation, implementation of digital advertising campaigns (Google Ads & Social Ads), SEO strategy, content creation and CRM emailing strategy.
-        <br>The ultimate goal, <span style="background-color: #f70776; color: #ffffff; font-weight: bold;">to reach your targets at the right time with the right message</span> to get the most conversions at the lowest cost.</p>
+      <p *ngIf="language == 'fr'" class="mt-lg-5 mt-3 mb-5">
+        Notre mission est de vous faire <span style="background-color: #f70776; color: #ffffff; font-weight: bold;">atteindre vos objectifs</span> de croissance en mettant à votre service toute notre expertise digitale : 
+        <b style="color: #ffffff;">Développement de Webs</b>, <b style="color: #ffffff;">applications mobiles</b>, <b style="color: #ffffff;">création de sites vitrine</b>, <b style="color: #ffffff;">conseils en informatique</b>, <b style="color: #ffffff;">applications desktop</b>. 
+        Le but ultime, <span style="background-color: white; color: #ffffff; font-weight: bold;">toucher vos cibles au bon moment avec le bon message</span> pour obtenir le plus de conversions au meilleur coût.
+      </p>
+      
+      <p *ngIf="language == 'en'" class="mt-lg-5 mt-3 mb-5">
+        Our mission is to help you <span style="background-color: #f70776; color: #ffffff; font-weight: bold;">achieve your growth objectives</span> by putting all our digital expertise at your service: 
+        <b style="color: #ffffff;">Web development</b>, <b style="color: #ffffff;">mobile application</b>, <b style="color: #ffffff;">creation of showcase websites</b>, <b style="color: #ffffff;">IT consulting</b>, <b style="color: #ffffff;">desktop applications</b>. 
+        The ultimate goal, <span style="background-color: #f70776; color: #ffffff; font-weight: bold;">to reach your targets at the right time with the right message</span> to get the most conversions at the lowest cost.
+      </p>
+      
+      
+      
         <div id="up-down">
           <a (click)="scrollToSection('DWeb')"><i style="cursor: pointer" class="fa-solid fa-chevron-down"></i></a>
         </div>
@@ -53,8 +63,8 @@
         <div class="col-lg-6 p-4">
           <div class="d-flex justify-content-start  lien" style="margin-top: 70px">
 
-            <p *ngIf="language == 'fr'" ><mark style="background: #f70776">Développement Logiciel</mark></p>
-            <p *ngIf="language == 'en'" ><mark style="background: #f70776">Software development</mark></p> 
+            <p *ngIf="language == 'fr'" ><mark style="background: #f70776">Développement Web</mark></p>
+            <p *ngIf="language == 'en'" ><mark style="background: #f70776">Web development</mark></p> 
             <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('Ads')">Showcase Creation</a> 
             <a *ngIf="language == 'fr'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('Ads')">Création Sites Vitrine</a> 
             <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('emailing')"> IT Consulting</a> 
@@ -66,12 +76,12 @@
           
           </div>
 
-          <h1 *ngIf="language == 'fr'" class="mt-5"><strong>Développement Logiciel</strong></h1>
-          <h1 *ngIf="language == 'en'" class="mt-5"><strong>Software development</strong></h1>
+          <h1 *ngIf="language == 'fr'" class="mt-5"><strong>Développement Web</strong></h1>
+          <h1 *ngIf="language == 'en'" class="mt-5"><strong>Web development</strong></h1>
 
 
-          <p *ngIf="language == 'fr'" class="mt-4">Découvrez le développement logiciel de pointe adapté à vos spécifications. Notre équipe qualifiée garantit des solutions efficaces, évolutives et innovantes, alignées sur vos objectifs commerciaux.</p>
-          <p *ngIf="language == 'en'" class="mt-4">Experience cutting-edge software development tailored to your specifications. Our skilled team ensures efficient, scalable, and innovative solutions that align with your business goals.</p>
+          <p *ngIf="language == 'fr'" class="mt-4">Valorisez votre présence digitale avec notre développement web sur mesure. Nous concevons des solutions qui s'alignent sur vos besoins uniques, garantissant efficacité, évolutivité et innovation.</p>
+          <p *ngIf="language == 'en'" class="mt-4">Enhance your digital presence with our customized web development. We engineer solutions that align with your unique needs, ensuring efficiency, scalability, and innovation.</p>
 
        
 
@@ -114,8 +124,8 @@
         <div class="col-lg-6 p-4">
           <div class="d-flex justify-content-start  lien" style="margin-top: 70px">
 
-            <a *ngIf="language == 'fr'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Développement Logiciel </a>
-            <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Software development </a> 
+            <a *ngIf="language == 'fr'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Développement Web </a>
+            <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Web development </a> 
             <p *ngIf="language == 'fr'" ><mark style="background: #f70776">Création Sites Vitrine</mark></p>
             <p *ngIf="language == 'en'" ><mark style="background: #f70776">Showcase Creation</mark></p> 
             <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('emailing') ">IT Consulting</a> 
@@ -179,8 +189,8 @@
         <div class="col-lg-6 p-4">
            <div class="d-flex justify-content-start  lien" style="margin-top: 70px">
 
-            <a *ngIf="language == 'fr'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Développement Logiciel </a>
-            <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Software development </a> 
+            <a *ngIf="language == 'fr'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Développement Web </a>
+            <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Web development </a> 
             <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('Ads')">Showcase Creation</a> 
             <a *ngIf="language == 'fr'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('Ads')">Création Sites Vitrine</a> 
             <p *ngIf="language == 'fr'" ><mark style="background: #f70776">Conseil En Informatique</mark></p>
@@ -236,32 +246,22 @@
           </div>
 
         </div>
-
-
-        <div class="col-lg-6 p-4">
+       <div class="col-lg-6 p-4">
           <div class="d-flex justify-content-start  lien" style="margin-top: 70px">
-
-            <a *ngIf="language == 'fr'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Développement Logiciel </a>
-            <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Software development </a> 
+            <a *ngIf="language == 'fr'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Développement Web </a>
+            <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Web development </a> 
             <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('Ads')">Showcase Creation</a> 
             <a *ngIf="language == 'fr'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('Ads')">Création Sites Vitrine</a> 
             <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('emailing')">IT Consulting</a> 
             <a *ngIf="language == 'fr'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('emailing')">Conseil En Informatique</a>             <p *ngIf="language == 'fr'" ><mark style="background: #f70776">Application Mobile</mark>  </p>
             <p *ngIf="language == 'en'" ><mark style="background: #f70776">Mobile Applications</mark>  </p>  
             <a *ngIf="language == 'fr'" class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('seo')">Application Desktop</a>
-            <a *ngIf="language == 'en'" class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('seo')">Desktop Applications</a>
-          
+            <a *ngIf="language == 'en'" class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('seo')">Desktop Applications</a>        
           </div>
-
           <h1 *ngIf="language == 'fr'" class="mt-5"><strong>Application Mobile</strong></h1>
           <h1 *ngIf="language == 'en'" class="mt-5"><strong>Mobile Applications</strong></h1>
-
-
           <p *ngIf="language == 'fr'" class="mt-4">Donnez vie à vos idées avec notre expertise en développement d'applications mobiles. De la conception à l'exécution, nous créons des applications conviviales qui améliorent l'accessibilité, la fonctionnalité et la satisfaction globale de l'utilisateur.</p>
           <p *ngIf="language == 'en'" class="mt-4">Bring your ideas to life with our mobile app development expertise. From concept to execution, we craft user-friendly applications that enhance accessibility, functionality, and overall user satisfaction.</p>
-
-
-
         </div>
       </div>
     </section>
@@ -300,8 +300,8 @@
         <div class="col-lg-6 p-4">
           <div class="d-flex justify-content-start  lien" style="margin-top: 70px">
 
-            <a *ngIf="language == 'fr'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Développement Logiciel </a>
-            <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Software development </a> 
+            <a *ngIf="language == 'fr'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Développement Web </a>
+            <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('DWeb')"> Web development </a> 
             <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('Ads')">Showcase Creation</a> 
             <a *ngIf="language == 'fr'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('Ads')">Création Sites Vitrine</a> 
             <a *ngIf="language == 'en'"  class="mx-lg-4 mx-2 text-decoration-none" (click)="scrollToSection('emailing')">IT Consulting</a> 
