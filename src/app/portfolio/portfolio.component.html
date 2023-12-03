@@ -15,10 +15,11 @@
 
     <div class="col-lg-6 col-md-6 order-lg-2 order-md-2 order-1 mt-lg-0 mt-md-0 mt-5 p-lg-0 p-md-0 p-3 text-white d-flex align-items-center">
       <div class="p-2">
-        <p class="" ><mark class="p-2 text-white" style="background: #f70776">Cas Client · Portfolio</mark></p>
-      <h1 class=""><b>AXADIA</b></h1>
-      <p *ngIf="language == 'fr'">AXADIA, l’expérience métavers d’AXA. Nous avons réalisé le branding de l’expérience ainsi que les assets créatifs pour sa sortie : logo, trailer vidéo…</p>
-      <p *ngIf="language == 'en'">AXADIA, AXA's metaverse experience. We created the branding for the experience, as well as the creative assets for its release: logo, video trailer...</p>
+        <p class="" ><mark class="p-2 text-white" style="background: #f70776"> Bâtir des relations ·au-delà des transactions</mark></p>
+        <p *ngIf="language == 'fr'" class=""><mark class="p-2 text-white" style="background: #f70776">Bâtir des relations ·au-delà des transactions</mark></p>
+
+      <p *ngIf="language == 'fr'">Nous croyons que le meilleur service crée un client, pas seulement une vente.</p>
+      <p *ngIf="language == 'en'">We believe that the best service creates a customer, not just a sale.</p>
 
     </div>
     </div>
@@ -40,19 +41,19 @@
 
         <div *ngIf="language == 'fr'" class="d-flex justify-content-evenly">
           <a class="mt-3 " [ngClass]="{'a-active': isActive === 'Tous'}" (click)="toggleActive('Tous')">Tous</a>
-          <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'Ads'}" (click)="toggleActive('Ads')">Ads</a>
-          <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'Design graphique'}" (click)="toggleActive('Design graphique')">Design graphique</a>
+          <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'Conseil En Informatique'}" (click)="toggleActive('Conseil En Informatique')">Conseil En Informatique</a>
+          <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'Application Mobile'}" (click)="toggleActive('Application Mobile')">Application Mobile</a>
           <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'Développement Web'}" (click)="toggleActive('Développement Web')">Développement Web</a>
-          <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'Direction artistique'}" (click)="toggleActive('Direction artistique')">Direction artistique</a>
-          <a class="mt-3" [ngClass]="{'a-active': isActive === 'Metaverse'}" (click)="toggleActive('Metaverse')">Metaverse</a>
+          <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'Création Sites Vitrine'}" (click)="toggleActive('Création Sites Vitrine')">Création Sites Vitrine</a>
+          <a class="mt-3" [ngClass]="{'a-active': isActive === 'Application Desktop'}" (click)="toggleActive('Application Desktop')">Application Desktop</a>
         </div>
         <div *ngIf="language == 'en'" class="d-flex justify-content-evenly">
           <a class="mt-3 " [ngClass]="{'a-active': isActive === 'Tous'}" (click)="toggleActive('Tous')">All</a>
-          <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'Ads'}" (click)="toggleActive('Ads')">Ads</a>
-          <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'Design graphique'}" (click)="toggleActive('Design graphique')">Graphic design</a>
+          <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'IT Consulting'}" (click)="toggleActive('IT Consulting')">IT Consulting</a>
+          <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'Mobile Applications'}" (click)="toggleActive('Mobile Applications')">Mobile Applications</a>
           <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'Développement Web'}" (click)="toggleActive('Développement Web')">Web development</a>
-          <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'Direction artistique'}" (click)="toggleActive('Direction artistique')">Art Direction</a>
-          <a class="mt-3" [ngClass]="{'a-active': isActive === 'Metaverse'}" (click)="toggleActive('Metaverse')">Metaverse</a>
+          <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'Showcase Creation'}" (click)="toggleActive('Showcase Creation')">Showcase Creation</a>
+          <a class="mt-3" [ngClass]="{'a-active': isActive === 'Desktop Applications'}" (click)="toggleActive('Desktop Applications')">Desktop Applications</a>
         </div>
 
 
@@ -109,12 +110,10 @@
 
   <section  class="mt-5" style="background: #005792; color: white">
     <div class="image-container2">
-
       <img src="assets/images/Sticker-02.svg" class="sticker2" >
     </div>
     <div class="container">
       <div class="image-container">
-
         <img src="assets/images/Team-Vingt-Deux-2022.png" class="img-fluid" style="border-radius: 15px">
         <img src="assets/images/Sticker-01.svg" class="sticker" >
       </div>
