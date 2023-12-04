@@ -19,7 +19,7 @@ export class PortfolioComponent implements OnInit {
     {
       imageSrc: 'assets/images/site1.png',
       category: 'Développement Web',
-      title: 'AXADIA',
+      title: 'Howardrp',
       description: 'AXADIA, l’expérience métavers d’AXA. Nous avons réalisé le branding de l’expérience ainsi que les assets créatifs pour sa sortie : logo, trailer vidéo…',
       descEn: 'AXADIA, AXAs metaverse experience. We created the branding for the experience, as well as the creative assets for its release: logo, video trailer...',
       link:'https://www.howardrp.com/?fbclid=IwAR1iFDxz78qIodAJK0FwqjPMKHuN_kLQV-S1o0AgMZVsXnM1-rj3pCTr6Aw#/'
@@ -27,35 +27,23 @@ export class PortfolioComponent implements OnInit {
     {
       imageSrc: 'assets/images/Contenus-LHDB.jpg',
       category: 'Mobile Applications',
-      title: 'Double Jump x Captain Tsubasa',
-      description: 'La franchise du célèbre manga nippon Captain Tsubasa (Olive et Tom) se lance dans le web3 avec une collection NFT. Nous accompagnons le studio Double Jump Tokyo sur la sortie en France : PR, influence, conseils…',
-      descEn:'The famous Japanese manga franchise Captain Tsubasa (Olive and Tom) launches on web3 with an NFT collection. Were working with the Double Jump Tokyo studio on the French release: PR, influence, advice...'
-    }, {
-      imageSrc: 'assets/images/Emailing-MafiaFoot.jpg',
-      category: 'Showcase Creation',
-      title: 'Qapsul',
-      description: 'Une nouvelle marque résolument écologique pour laquelle nous avons imaginé le nom et créé l’identité visuelle (réalisation du logo, de la charte graphique).',
-      descEn:'A new, resolutely ecological brand for which we imagined the name and created the visual identity (logo, graphic charter).'
+      title: 'Boutique Express',
+      description: "Découvrez l'élégance à portée de main avec Boutique Express. Explorez nos collections tendance, profitez d'offres exclusives et simplifiez votre shopping en ligne. Plongez dans un monde de style sans effort, où chaque clic vous rapproche de la mode qui vous distingue",
+      descEn:"Discover elegance at your fingertips with Boutique Express. Explore our trendy collections, enjoy exclusive offers, and simplify your online shopping. Immerse yourself in a world of effortless style, where each click brings you closer to the fashion that sets you apart."
     }, {
       imageSrc: 'assets/images/site2.png',
       category: 'Développement Web',
-      title: 'Esprit Trek',
-      description: 'Stratégie acquisition digitale, A/B testing, SEA, Facebook & Instagram Ads.',
-      descEn:'Digital acquisition strategy, A/B testing, SEA, Facebook & Instagram Ads.',
+      title: 'ProxyWorkers',
+      description: "Une plateforme en ligne qui permet aux utilisateurs d'acheter des proxies, également appelés serveurs proxy. Un proxy est un serveur intermédiaire qui agit comme un intermédiaire entre l'utilisateur et Internet. Il permet aux utilisateurs de masquer leur adresse IP et de contourner les restrictions géographiques imposées par certains sites web.",
+      descEn:'an online platform that allows users to purchase proxies, which are also known as proxy servers. A proxy is an intermediary server that acts as a go-between for the user and the internet. It allows users to hide their IP address and bypass geographical restrictions imposed by certain websites.',
       link:'https://proxyworkers.com/#/home'
-    }, {
-      imageSrc: 'assets/images/it.png',
-      category: 'IT Consulting',
-      title: 'AXADIA',
-      description: 'AXADIA, l’expérience métavers d’AXA. Nous avons réalisé le branding de l’expérience ainsi que les assets créatifs pour sa sortie : logo, trailer vidéo…',
-      descEn:'AXADIA, AXAs metaverse experience. We created the branding for the experience, as well as the creative assets for its release: logo, video trailer...'
     },
     {
-      imageSrc: 'assets/images/SEO-Psychologie-Parentale.jpg',
+      imageSrc: 'assets/images/des.png',
       category: 'Desktop Applications',
-      title: 'Esprit Trek',
-      description: 'Stratégie acquisition digitale, A/B testing, SEA, Facebook & Instagram Ads.',
-      descEn:'Digital acquisition strategy, A/B testing, SEA, Facebook & Instagram Ads.'
+      title: 'Le Bouffle',
+      description: "Plongez dans une expérience culinaire exceptionnelle avec l'application de bureau Le Bouffle. Explorez notre menu exquis, passez vos commandes en toute simplicité et délectez-vous de saveurs uniques. Découvrez une nouvelle dimension de la gastronomie, où la commodité rencontre la délicatesse des plats de qualité.",
+      descEn:"Dive into an exceptional culinary experience with the Le Bouffle desktop application. Explore our exquisite menu, place your orders effortlessly, and savor unique flavors. Discover a new dimension of gastronomy, where convenience meets the delicacy of high-quality dishes."
     },
   ];
   language: string;
