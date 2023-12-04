@@ -17,37 +17,45 @@ import { CookieService } from 'ngx-cookie-service';
 export class PortfolioComponent implements OnInit {
   blogItems: any[] = [
     {
-      imageSrc: 'assets/images/port_1 (1).png',
-      category: 'Design graphique',
+      imageSrc: 'assets/images/site1.png',
+      category: 'Développement Web',
       title: 'AXADIA',
-      
       description: 'AXADIA, l’expérience métavers d’AXA. Nous avons réalisé le branding de l’expérience ainsi que les assets créatifs pour sa sortie : logo, trailer vidéo…',
-      descEn: 'AXADIA, AXAs metaverse experience. We created the branding for the experience, as well as the creative assets for its release: logo, video trailer...'
+      descEn: 'AXADIA, AXAs metaverse experience. We created the branding for the experience, as well as the creative assets for its release: logo, video trailer...',
+      link:'https://www.howardrp.com/?fbclid=IwAR1iFDxz78qIodAJK0FwqjPMKHuN_kLQV-S1o0AgMZVsXnM1-rj3pCTr6Aw#/'
     },
     {
-      imageSrc: 'assets/images/port_1 (2).png',
-      category: 'Metaverse',
+      imageSrc: 'assets/images/Contenus-LHDB.jpg',
+      category: 'Mobile Applications',
       title: 'Double Jump x Captain Tsubasa',
       description: 'La franchise du célèbre manga nippon Captain Tsubasa (Olive et Tom) se lance dans le web3 avec une collection NFT. Nous accompagnons le studio Double Jump Tokyo sur la sortie en France : PR, influence, conseils…',
       descEn:'The famous Japanese manga franchise Captain Tsubasa (Olive and Tom) launches on web3 with an NFT collection. Were working with the Double Jump Tokyo studio on the French release: PR, influence, advice...'
     }, {
-      imageSrc: 'assets/images/port_1 (3).png',
-      category: 'Ads',
+      imageSrc: 'assets/images/Emailing-MafiaFoot.jpg',
+      category: 'Showcase Creation',
       title: 'Qapsul',
       description: 'Une nouvelle marque résolument écologique pour laquelle nous avons imaginé le nom et créé l’identité visuelle (réalisation du logo, de la charte graphique).',
       descEn:'A new, resolutely ecological brand for which we imagined the name and created the visual identity (logo, graphic charter).'
     }, {
-      imageSrc: 'assets/images/port_1 (4).png',
-      category: 'Design graphique',
+      imageSrc: 'assets/images/site2.png',
+      category: 'Développement Web',
       title: 'Esprit Trek',
       description: 'Stratégie acquisition digitale, A/B testing, SEA, Facebook & Instagram Ads.',
-      descEn:'Digital acquisition strategy, A/B testing, SEA, Facebook & Instagram Ads.'
+      descEn:'Digital acquisition strategy, A/B testing, SEA, Facebook & Instagram Ads.',
+      link:'https://proxyworkers.com/#/home'
     }, {
-      imageSrc: 'assets/images/port_1 (1).png',
-      category: 'Développement Web',
+      imageSrc: 'assets/images/it.png',
+      category: 'IT Consulting',
       title: 'AXADIA',
       description: 'AXADIA, l’expérience métavers d’AXA. Nous avons réalisé le branding de l’expérience ainsi que les assets créatifs pour sa sortie : logo, trailer vidéo…',
       descEn:'AXADIA, AXAs metaverse experience. We created the branding for the experience, as well as the creative assets for its release: logo, video trailer...'
+    },
+    {
+      imageSrc: 'assets/images/SEO-Psychologie-Parentale.jpg',
+      category: 'Desktop Applications',
+      title: 'Esprit Trek',
+      description: 'Stratégie acquisition digitale, A/B testing, SEA, Facebook & Instagram Ads.',
+      descEn:'Digital acquisition strategy, A/B testing, SEA, Facebook & Instagram Ads.'
     },
   ];
   language: string;
@@ -60,7 +68,8 @@ export class PortfolioComponent implements OnInit {
   }
 
   isActive: string = 'Tous';
-  filteredItems: any[] = [];
+  filteredItems: any[] = [
+  ];
   toggleActive(element: string) {
     this.isActive = element;
 

@@ -68,8 +68,6 @@
 
 
       <div class="col-lg-4 col-md-6 mt-3 mb-4 text-white" *ngFor="let item of blogItems" [ngClass]="{ 'hidden': !item.visible }" [@fade]="item.visible ? 'visible' : 'hidden'">
-
-
           <img [src]="item.imageSrc" class="img-fluid">
 
         <h5 class="mt-3 titre">{{ item.title }})</h5>
@@ -80,30 +78,17 @@
 
       </div>
 
+      
+
 
       <div *ngIf="filteredItems.length === 0"  class="row mt-5 mb-5 text-white">
         <div class="col-lg-3 col-3"></div>
         <div class="col-lg-6 col-6 text-center">
           <h3 *ngIf="language == 'fr'" > Aucun élément trouvé pour la catégorie sélectionnée.</h3>
           <h3 *ngIf="language == 'en'" > No items found for the selected category.</h3>
-
         </div>
-
       </div>
-
-
-
-
-
-
-
-
     </div>
-
-
-
-
-
   </div>
 
 
