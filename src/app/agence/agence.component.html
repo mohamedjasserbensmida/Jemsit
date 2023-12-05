@@ -1,17 +1,19 @@
 
-<div class="bg-image">
+<div>
   <video  #video src="assets/images/values.mp4" loop muted autoplay  (canplay)="video.play()" playsInline
     (loadedmetadata)="video.muted = true"></video>
 </div>
-<div class="body-agence">
+<div class="body-agence1">
   <div class="container">
-    <div class="row "> 
+    <div class="row"> 
        </div>      
-          <div class="row">
-            <div class="col-lg-12 col-md-6 col-8 text-center mt-5 mb-5 text-white">
+          <div class="row" style="display: flex;
+          align-items: center;
+          justify-content: center">
+            <div class="col-lg-10 col-md-6 col-8 text-center mt-5 mb-5 text-white">
               <h1 *ngIf="language == 'fr'"  class="text-agence" ><strong>Jemsit</strong></h1>
               <h1 *ngIf="language == 'en'"  class="text-agence" ><strong>Jemsit</strong></h1>
-              <h2 *ngIf="language == 'fr'" class="mt-5 text-description">Jemsit est une <b>Spécialisé dans le développement Web et mobile,</b> Jemsit vous accompagne dans vos projets en développant des solutions clés en main spécifiques à vos besoins afin d'optimiser votre parcours de travail.</h2>
+              <h2 *ngIf="language == 'fr'" class="mt-5 text-description">Jemsit est une <b style="background: #f70776">Spécialisé dans le développement Web et mobile,</b> Jemsit vous accompagne dans vos projets en développant des solutions clés en main spécifiques à vos besoins afin d'optimiser votre parcours de travail.</h2>
               <h2 *ngIf="language == 'en'" class="mt-5 text-description">Jemsit is an <b style="background: #f70776" >Specialized in Web and mobile development,</b> Jemsit accompanies you in your projects by developing turnkey solutions tailored to your needs to optimize your workflow.</h2>
             </div> 
           </div>

@@ -54,7 +54,7 @@ export class AppComponent {
   getUserLanguage(countryCode: string): string {
     // Implement your own logic to map country codes to language codes
     // Here's an example that assumes French-speaking countries use 'fr' and all others use 'en' ,'TN'
-    if (['FR', 'CA', 'BE', 'CH'].includes(countryCode.toUpperCase())) {
+    if (['FR', 'CA', 'BE', 'CH','TN'].includes(countryCode.toUpperCase())) {
       return 'fr';
     } else {
       return 'en';
