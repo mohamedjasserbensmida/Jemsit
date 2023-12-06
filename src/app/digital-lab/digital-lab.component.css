@@ -145,6 +145,15 @@ i{
   .hide-mobile{
     display: none;
   }
+
+  .justify-content-start {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .justify-content-start>a {
+    width: calc(33.33% - 2em);
+  }
 }
 ::-webkit-scrollbar {
   width: 6px;

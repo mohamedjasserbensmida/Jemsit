@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { CookieService } from 'ngx-cookie-service';
 @Component({
@@ -16,7 +16,23 @@ language: string;
   ngOnInit(): void {
     this.loadScript('assets/js/navbar.js');
   this.language = this.cookieService.get('lang');
+
+  this.router.events.subscribe((event) => {
+    if (event instanceof NavigationEnd) {
+      // Close the navbar when a new page is navigated to
+      this.closeNavbar();
+      console.log('okk')
+    }
+  });
     
+  }
+
+  closeNavbar() {
+    // You can use Bootstrap's JavaScript API to close the navbar
+    const navbarToggler = document.getElementById('navbarToggler');
+    if (navbarToggler) {
+      navbarToggler.click(); // Simulate a click to close the navbar
+    }
   }
   isDropdownOpen: boolean = false;
 

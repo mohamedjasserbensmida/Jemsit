@@ -8,8 +8,8 @@
     </div>
     <div class="col-lg-6 col-md-6 order-lg-2 order-md-2 order-2 mt-lg-0 mt-md-0 mt-5 p-lg-0 p-md-0 p-3 text-white d-flex align-items-center">
       <div class="p-2">
-        <p class="" ><mark class="p-2 text-white" style="background: #f70776"> Bâtir des relations · au-delà des transactions</mark></p>
-        <p *ngIf="language == 'fr'" class=""><mark class="p-2 text-white" style="background: #f70776">Building relationships beyond transactions</mark></p>
+        <p *ngIf="language == 'fr'" class="" ><mark class="p-2 text-white" style="background: #f70776"> Bâtir des relations · au-delà des transactions</mark></p>
+        <p *ngIf="language == 'en'" class=""><mark class="p-2 text-white" style="background: #f70776">Building relationships beyond transactions</mark></p>
 
       <p *ngIf="language == 'fr'">Nous croyons que le meilleur service crée un client, pas seulement une vente.</p>
       <p *ngIf="language == 'en'">We believe that the best service creates a customer, not just a sale.</p>
@@ -34,7 +34,7 @@
         <div *ngIf="language == 'fr'" class="d-flex justify-content-evenly">
           <a class="mt-3 " [ngClass]="{'a-active': isActive === 'Tous'}" (click)="toggleActive('Tous')">Tous</a>
           <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'Conseil En Informatique'}" (click)="toggleActive('Conseil En Informatique')">Conseil En Informatique</a>
-          <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'Application Mobile'}" (click)="toggleActive('Application Mobile')">Application Mobile</a>
+          <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'Mobile Applications'}" (click)="toggleActive('Mobile Applications')">Application Mobile</a>
           <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'Développement Web'}" (click)="toggleActive('Développement Web')">Développement Web</a>
           <a class="mx-2 mt-3" [ngClass]="{'a-active': isActive === 'Création Sites Vitrine'}" (click)="toggleActive('Création Sites Vitrine')">Création Sites Vitrine</a>
           <a class="mt-3" [ngClass]="{'a-active': isActive === 'Application Desktop'}" (click)="toggleActive('Application Desktop')">Application Desktop</a>
@@ -92,7 +92,7 @@
 
 
 
-      <div *ngIf="language == 'fr'" class="row mt-5">
+      <div *ngIf="language == 'fr'" class="row mt-5 pe-4 ps-4">
         <div class="col-lg-6 p-3 order-lg-1 order-1">
           <h3 class="mt-5">CONTACTEZ-NOUS
             <br><br>
@@ -156,7 +156,7 @@
   
   
   
-      <div *ngIf="language == 'en'" class="row mt-5">
+      <div *ngIf="language == 'en'" class="row mt-5 pe-4 ps-4">
         <div class="col-lg-6 p-3 order-lg-1 order-1">
           <h3 class="mt-5">CONTACT US
             <br><br>
