@@ -1,21 +1,26 @@
 
 <nav class="navbar navbar-expand-lg fixed-top " id="navbar" >
     <div class="container">
-      <a class="navbar-brand" [routerLink]="['/']"><img src="./assets/images/logo-vingtdeux-white (1).svg"></a>
-      <button id="navbarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" [routerLink]="['/']" ><img src="./assets/images/logo-vingtdeux-white (1).svg"></a>
+      <button id="navbarToggler" class="navbar-toggler" type="button" (click)="toggleDropdown()">
         <span class="navbar-toggler-icon">    <i class="fa fa-navicon" style="color:#fff; font-size:28px;"></i>
 </span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-family: 'Pangram'" [hidden]="false">
+      <div class="collapse navbar-collapse" [ngClass]="{'show': isDropdownOpen}" id="navbarSupportedContent" style="font-family: 'Pangram'" >
         <ul class="navbar-nav mx-auto  ">
+
           <li class="nav-item me-5">
-            <a *ngIf="language == 'fr'" class="nav-link text-white"  [routerLink]="['/portfolio']">Galerie</a>
-            <a *ngIf="language == 'en'" class="nav-link text-white"  [routerLink]="['/portfolio']">Showcase</a>
+            <a *ngIf="language == 'fr'" class="nav-link text-white"  [routerLink]="['/home']" (click)="toggleDropdown()">Accueil</a>
+            <a *ngIf="language == 'en'" class="nav-link text-white"  [routerLink]="['/home']" (click)="toggleDropdown()">Home</a>
+          </li>
+          <li class="nav-item me-5">
+            <a *ngIf="language == 'fr'" class="nav-link text-white"  [routerLink]="['/portfolio']" (click)="toggleDropdown()">Galerie</a>
+            <a *ngIf="language == 'en'" class="nav-link text-white"  [routerLink]="['/portfolio']" (click)="toggleDropdown()">Showcase</a>
           </li>
 
 
           <li *ngIf="language == 'fr'" class="nav-item dropdown me-5">
-            <a class="nav-link dropdown text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
               Savoir-faire
             </a>
             <ul class="dropdown-menu " style="background: transparent; border: hidden">
@@ -30,7 +35,7 @@
                 <li>Application Mobile</li>
                 <li>Application Desktop</li>
           </ul>
-                <a class="btn btn_modifierNav mt-3 mb-3"  [routerLink]="['/digital']"><b>Plus d'infos</b> <i class="fa-solid fa-plus ms-4"></i></a>
+                <a class="btn btn_modifierNav mt-3 mb-3"  [routerLink]="['/digital']" (click)="toggleDropdown()"><b>Plus d'infos</b> <i class="fa-solid fa-plus ms-4"></i></a>
               </li>
             </ul>
           </li>
@@ -50,17 +55,17 @@
                 <li>Mobile Applications</li>
                <li>Desktop Applications</li>
               </ul>
-                <a class="btn btn_modifierNav mt-3 mb-3"  [routerLink]="['/digital']"><b>More info</b> <i class="fa-solid fa-plus ms-4"></i></a>
+                <a class="btn btn_modifierNav mt-3 mb-3"  [routerLink]="['/digital']" (click)="toggleDropdown()"><b>More info</b> <i class="fa-solid fa-plus ms-4"></i></a>
               </li>
             </ul>
           </li>
           <li class="nav-item me-5">
-            <a *ngIf="language == 'fr'" class="nav-link text-white"  [routerLink]="['/agence']">Notre Histoire</a>
-            <a *ngIf="language == 'en'" class="nav-link text-white"  [routerLink]="['/agence']">Our Story</a>
+            <a *ngIf="language == 'fr'" class="nav-link text-white"  [routerLink]="['/agence']" (click)="toggleDropdown()">Notre Histoire</a>
+            <a *ngIf="language == 'en'" class="nav-link text-white"  [routerLink]="['/agence']" (click)="toggleDropdown()">Our Story</a>
           </li>
         </ul>
 
-          <a class="btn btn_modifier " (click)="scrollToSection('form')">Contact <i class="fa-solid fa-plus ms-4"></i></a>
+          <a class="btn btn_modifier " (click)="scrollToSection('form')" (click)="toggleDropdown()">Contact <i class="fa-solid fa-plus ms-4"></i></a>
 
       </div>
     </div>

@@ -11,19 +11,21 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class HeaderComponent implements OnInit {
 language: string;
+isDropdownOpen: boolean = false;
+
   constructor(private renderer: Renderer2,private router: Router,private location: Location,private cookieService: CookieService) { }
 
   ngOnInit(): void {
     this.loadScript('assets/js/navbar.js');
   this.language = this.cookieService.get('lang');
 
-  this.router.events.subscribe((event) => {
+  /* this.router.events.subscribe((event) => {
     if (event instanceof NavigationEnd) {
       // Close the navbar when a new page is navigated to
-      this.closeNavbar();
+    //  this.closeNavbar();
       console.log('okk')
     }
-  });
+  });*/
     
   }
 
@@ -34,7 +36,6 @@ language: string;
       navbarToggler.click(); // Simulate a click to close the navbar
     }
   }
-  isDropdownOpen: boolean = false;
 
   toggleDropdown() {
     this.isDropdownOpen = !this.isDropdownOpen;
